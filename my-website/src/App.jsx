@@ -1,8 +1,14 @@
-function App() {
+import { Routes, Route, Link } from 'react-router-dom';
+import './App.css'; 
+
+function Home() {
   return (
     <div className="fullscreen">
       <div className="center-name">
         <h1>Austin Behrens</h1>
+      </div>
+      <div className="center-Welcome">
+        <h2>Portfolio</h2>
       </div>
         <div className="title-block">
           <p>Software & data developer</p>
@@ -12,19 +18,59 @@ function App() {
         </div>
 
         <div className="about-block">
-          <p>[ ] About me</p>
+          <p><Link to = "/about" className="link-style">[ ] About me</Link></p>
         </div>
+
           <div className="link-block">
+          <div><Link to = "/project" className= "linkP">[ ]Projects Page</Link></div>
           <p>Links</p>
           <div className="linkI">[ ] LinkedIn</div>
           <div className="linkG">[ ] GitHub</div>
           <div className="linkR">[ ] Resume</div>
-          <p>Contact</p>
+          <p>Contact Me</p>
           <div className = "linkE">[ ]Behrens.austin16@gmail.com</div> 
           <div className = "linkP">[ ]+1 516-880-3197</div>
         </div></div>
   );
 }
+
+function About() {
+  return (
+    <div className="fullscreen">
+      <div className="center-name">
+        <h1>About Me</h1>
+      </div>
+      <div className="about-block">
+        <p>This is the About page. You can write more here later.</p>
+        <p><Link to="/" className= "link-style" >[ ← Back to Home ]</Link></p>
+      </div>
+    </div>
+  );
+}
+
+function Project(){
+  return(
+    <div className="fullscreen">
+      <div className="center-name">
+        <h1>My Projects</h1>
+      </div>
+      <div className="about-block">
+        <p>This is Project page. Work in progress</p>
+        <p><Link to="/" className= "link-style" >[ ← Back to Home ]</Link></p>
+      </div>
+    </div>
+  );
+}
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/project" element={<Project />} />
+    </Routes>
+  );
+}
+
 
 export default App;
 

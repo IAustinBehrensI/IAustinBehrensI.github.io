@@ -7,6 +7,11 @@
   --font-header: 'Orbitron', sans-serif;
 }
 
+.link-style{
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -39,6 +44,24 @@ body {
   font-weight: bold;
   margin: 0;
 }
+
+.center-Welcome {
+  position: absolute;
+  top: 40%;
+  left: 18.5%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+}
+
+.center-Welcome h2 {
+  font-family: var(--font-header);
+  font-size: 2.5em;
+  color: black;
+  font-weight: bold;
+  margin: 0;
+}
+
 .title-block,
 .about-block,
 .link-block{
@@ -74,11 +97,14 @@ body {
 
 .line-text,
 .link-block p,
+.linkPP,
 .linkI,
 .linkG,
 .linkR,
 .linkE,
 .linkP {
+  text-decoration: none;
+  color: inherit;
   font-size: 1.5em;
   margin: 0.2em 0;
   display: flex;
@@ -88,13 +114,15 @@ body {
 
 /* Responsive tweaks */
 @media (max-width: 900px) {
-  .center-name h1 {
+  .center-name h1
+  {
     font-size: 2.5em;
   }
 
   .title-block,
   .about-block,
-  .link-block
+  .link-block,
+  .center-Welcome
   {
     position: static;
     text-align: center;
@@ -109,7 +137,8 @@ body {
     padding: 1em;
   }
 
-  .center-name {
+  .center-name
+  {
     position: static;
     transform: none;
     margin-top: 2em;
