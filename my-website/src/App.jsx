@@ -1,9 +1,12 @@
 import { Routes, Route, Link } from 'react-router-dom';
 import './App.css'; 
+import About from './About';
+import Project from './Project';
 
 function Home() {
   return (
     <div className="fullscreen">
+      <div className="grid-pattern"></div>
       <div className="center-name">
         <h1>Austin Behrens</h1>
       </div>
@@ -22,46 +25,19 @@ function Home() {
         </div>
 
           <div className="link-block">
-          <div><Link to = "/project" className= "linkP">[ ]Projects Page</Link></div>
+          <div><Link to = "/project" className= "linkPP">[ ]Projects Page</Link></div>
           <p>Links</p>
-          <div className="linkI">[ ] LinkedIn</div>
-          <div className="linkG">[ ] GitHub</div>
-          <div className="linkR">[ ] Resume</div>
+          <div className="linkI"><a href = "https://www.linkedin.com/in/austin-behrens-67697b205/" target = "_blank" rel = "noopener noreferrer">[ ] LinkedIn </a></div>
+          <div className="linkG"><a href = "https://github.com/IAustinBehrensI" target = "_blank" rel = "noopener noreferrer" >[ ] GitHub</a></div>
+          <div className="linkR"><a href = "/Austin-Behrens-resume.pdf" download target = "_blank" rel = "noopener noreferrer">[ ] Download Resume</a></div>
           <p>Contact Me</p>
-          <div className = "linkE">[ ]Behrens.austin16@gmail.com</div> 
-          <div className = "linkP">[ ]+1 516-880-3197</div>
+          <div className = "linkE"><a href = "mailto:Behrens.Austin16@gmail.com" target = "_blank" rel = "noopener noreferrer">[ ]Behrens.austin16@gmail.com</a></div> 
+          <div className = "linkP"><a href = "tel:5168803197" target = "_blank" rel = "noopener noreferrer">[ ]516-880-3197</a></div>
+          <div className="corner-tag"><p>A.BE</p></div>
         </div></div>
   );
 }
-
-function About() {
-  return (
-    <div className="fullscreen">
-      <div className="center-name">
-        <h1>About Me</h1>
-      </div>
-      <div className="about-block">
-        <p>This is the About page. You can write more here later.</p>
-        <p><Link to="/" className= "link-style" >[ ← Back to Home ]</Link></p>
-      </div>
-    </div>
-  );
-}
-
-function Project(){
-  return(
-    <div className="fullscreen">
-      <div className="center-name">
-        <h1>My Projects</h1>
-      </div>
-      <div className="about-block">
-        <p>This is Project page. Work in progress</p>
-        <p><Link to="/" className= "link-style" >[ ← Back to Home ]</Link></p>
-      </div>
-    </div>
-  );
-}
-function App() {
+  function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
@@ -69,10 +45,7 @@ function App() {
       <Route path="/project" element={<Project />} />
     </Routes>
   );
-}
-
-
-export default App;
+}export default App;
 
 
 
@@ -87,7 +60,7 @@ npm run dev
 #Once ready to test to pubic web page
 
 # 2. Commit & push your code to GitHub
-git add .cd
+git add .
 git commit -m "Describe your changes"
 git push origin main
 
