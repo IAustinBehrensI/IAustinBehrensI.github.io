@@ -29,11 +29,11 @@ function Home() {
           <p>Links</p>
           <div className="linkI"><a href = "https://www.linkedin.com/in/austin-behrens-67697b205/" target = "_blank" rel = "noopener noreferrer">[ ] LinkedIn </a></div>
           <div className="linkG"><a href = "https://github.com/IAustinBehrensI" target = "_blank" rel = "noopener noreferrer" >[ ] GitHub</a></div>
-          <div className="linkR"><a href = "/Austin-Behrens-resume.pdf" download target = "_blank" rel = "noopener noreferrer">[ ] Download Resume</a></div>
+          <div className="linkR"><a href = "/Austin-Behrens-Resume.pdf" download = "Austin-Behrens-Resume.pdf" >[ ] Download Resume</a></div>
           <p>Contact Me</p>
           <div className = "linkE"><a href = "mailto:Behrens.Austin16@gmail.com" target = "_blank" rel = "noopener noreferrer">[ ]Behrens.austin16@gmail.com</a></div> 
           <div className = "linkP"><a href = "tel:5168803197" target = "_blank" rel = "noopener noreferrer">[ ]516-880-3197</a></div>
-          <div className="corner-tag"><p>A.BE</p></div>
+          <div className="corner-tag"><p>AB.Prtf</p></div>
         </div></div>
   );
 }

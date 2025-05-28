@@ -211,16 +211,14 @@ body {
     order:4;
     position: static;
     text-align: center;
-    margin-top: 2.0em;
+    margin-top: 1.5em;
     font-size: 0.94em;
   }
-
-  .link-block
+    .link-block
   {
     order:5;
     position: static;
     text-align: center;
-    margin-top: 0.5em;
-    font-size: 1.2em;
+  font-size: 1.2em;
   }
 }
