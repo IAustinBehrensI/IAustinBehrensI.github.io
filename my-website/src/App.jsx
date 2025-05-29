@@ -2,6 +2,9 @@ import { Routes, Route, Link } from 'react-router-dom';
 import './App.css'; 
 import About from './About';
 import Project from './Project';
+import ProjectDetail from './ProjectDetail';
+import ProjectDetail2 from './ProjectDetail2';
+import ProjectDetail3 from './ProjectDetail3';
 
 function Home() {
   return (
@@ -43,6 +46,10 @@ function Home() {
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/project" element={<Project />} />
+      <Route path="/" element={<Project />} />
+      <Route path="/projectdetail" element={<ProjectDetail />} />
+      <Route path="/projectdetail2" element={<ProjectDetail2 />} />
+      <Route path="/projectdetail3" element={<ProjectDetail3 />} />
     </Routes>
   );
 }export default App;

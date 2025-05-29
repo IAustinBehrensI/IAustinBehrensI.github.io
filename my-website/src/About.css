@@ -18,6 +18,15 @@
       #000 10px
     );
   }
+  .corner-home {
+    position: fixed;
+    top: 40px;
+    left: 10px;
+    color: rgb(0, 0, 0);
+    font-family: monospace;
+    font-size: 60px;
+    z-index: 999;
+  }
   .about-me {
     display: flex;
     flex-direction: column;

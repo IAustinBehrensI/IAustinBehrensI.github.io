@@ -21,6 +21,7 @@ function About() {
   <p>My goal is to grow into a full-stack developer or data engineer role where I can solve real-world problems, building useful systems, and continue to hone and sharpen my skillset.</p>
           <p><Link to="/" className= "link-style" >[Back to Home]</Link></p>
           <div className="corner-tag"><p>AB.Abt</p></div>
+        <p><Link to="/" className="corner-home">⌂</Link></p>
         </div>
       </div>
     );

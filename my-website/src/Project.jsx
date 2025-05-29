@@ -13,9 +13,9 @@ function Project() {
 
       <div className="project-img-block">
         <div className="project-left">
-          <a target="_blank" href="Placeholder.jpg" rel="noopener noreferrer">
+        <Link to="/projectdetail">
             <img src="Placeholder.jpg" alt="Project 1 preview" />
-          </a>
+            </Link>
           <p className="Pname">Project 1</p>
         </div>
         <div className="project-description-block">
@@ -25,9 +25,9 @@ function Project() {
 
       <div className="project-img-block">
         <div className="project-left">
-          <a target="_blank" href="Placeholder.jpg" rel="noopener noreferrer">
-            <img src="Placeholder.jpg" alt="Project 2 preview" />
-          </a>
+        <Link to="/projectdetail2">
+            <img src="Placeholder.jpg" alt="Project 1 preview" />
+            </Link>
           <p className="Pname">Project 2</p>
         </div>
         <div className="project-description-block">
@@ -37,9 +37,9 @@ function Project() {
 
       <div className="project-img-block">
         <div className="project-left">
-          <a target="_blank" href="Placeholder.jpg" rel="noopener noreferrer">
-            <img src="Placeholder.jpg" alt="Project 3 preview" />
-          </a>
+        <Link to="/projectdetail3">
+            <img src="Placeholder.jpg" alt="Project 1 preview" />
+            </Link>
           <p className="Pname">Project 3</p>
         </div>
         <div className="project-description-block">
@@ -50,6 +50,7 @@ function Project() {
       <div className="project-block">
         <p>This is the Project page. it is a Work in progress</p>
         <div className="corner-tag"><p>AB.Prjct</p></div>
+        <p><Link to="/" className="corner-home">⌂</Link></p>
         <p><Link to="/" className="link-style">[Back to Home]</Link></p>
       </div>
     </div>
