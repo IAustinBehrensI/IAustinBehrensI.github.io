@@ -1,9 +1,9 @@
 import React from 'react';
-import {Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './ProjectDetail.css';
 
 function ProjectDetail2() {
-
+  const navigate = useNavigate();
   return (
     <div className="fullscreen-project">
       <div className="grid-pattern-project"></div>
@@ -24,6 +24,7 @@ function ProjectDetail2() {
       </div>
       <div className="corner-tag"><p>AB.Prjct.2</p></div>
       <p><Link to="/" className="corner-home">⌂</Link></p>
+      <div className="corner-back" onClick={() => navigate(-1)}>←</div>
       <div className="projectDetail-block">
         <p>More about Project coming soon!</p>
         <p><Link to="/project" className="link-style">[Back to Projects]</Link></p>

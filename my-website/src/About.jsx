@@ -1,8 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './About.css';
 
 function About() {
+  const navigate = useNavigate();
     return (
       <div className="fullscreen-about">
         <div className="grid-pattern-about"></div>
@@ -22,6 +23,7 @@ function About() {
           <p><Link to="/" className= "link-style" >[Back to Home]</Link></p>
           <div className="corner-tag"><p>AB.Abt</p></div>
         <p><Link to="/" className="corner-home">⌂</Link></p>
+        <div className="corner-back" onClick={() => navigate(-1)}>←</div>
         </div>
       </div>
     );

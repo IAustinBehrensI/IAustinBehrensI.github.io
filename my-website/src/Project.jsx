@@ -1,8 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Project.css';
 
 function Project() {
+      const navigate = useNavigate();
   return (
     <div className="fullscreen-project">
       <div className="grid-pattern-project"></div>
@@ -51,6 +52,7 @@ function Project() {
         <p>This is the Project page. it is a Work in progress</p>
         <div className="corner-tag"><p>AB.Prjct</p></div>
         <p><Link to="/" className="corner-home">⌂</Link></p>
+        <div className="corner-back" onClick={() => navigate(-1)}>←</div>
         <p><Link to="/" className="link-style">[Back to Home]</Link></p>
       </div>
     </div>
