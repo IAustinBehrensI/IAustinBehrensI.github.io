@@ -25,7 +25,6 @@
     );
     z-index: 1;
 }
-
 .my-projectDetail-block {
     padding: 2em 2em 0 2em;
     z-index: 2;
@@ -56,7 +55,7 @@
     border: 2px solid black;
 }
 
-.PDdesc {
+.PDesc {
     font-size: 1.5em;
     font-weight: 600;
     margin-top: 0.75em;

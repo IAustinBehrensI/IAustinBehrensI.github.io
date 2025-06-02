@@ -74,6 +74,7 @@
   }
   
   .Pname {
+    cursor: default;
     font-size: 1.5em;
     margin-top: 0.5em;
     text-align: center;
@@ -88,6 +89,7 @@
   }
   
   .Pdesc {
+    cursor: default;
     font-size: 1.25em;
     line-height: 1.5em;
     margin: 0;

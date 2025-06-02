@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Geo:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
-
+/*initialize constants*/
 :root {
   --text-color: rgb(99, 98, 98);
   --font-main: 'Geo', sans-serif;
@@ -11,6 +11,7 @@
   text-decoration: none;
   color: inherit;
 }
+/*top of screen design*/
 .grid-pattern {
   position: absolute;
   top: 0;
@@ -25,6 +26,7 @@
     #000 10px
   );
 }
+/*default formatting*/
 body {
   margin: 0;
   padding: 0;
@@ -33,6 +35,7 @@ body {
   color: var(--text-color);
   overflow-x: hidden;
 }
+/*aesthetic tag formatting bottom right*/
 .corner-tag {
   position: fixed;
   bottom: 10px;
@@ -44,14 +47,14 @@ body {
   font-size: 14px;
   z-index: 999;
 }
-
+/*adsjust fullscreen size*/
 .fullscreen {
   width: 100vw;
   height: 95vh;
   position: relative;
   background-color: #dad5c9;
 }
-
+/*where my name will show + spacing and cursor settings*/
 .center-name {
   position: absolute;
   top: 20%;
@@ -61,7 +64,7 @@ body {
   z-index: 10;
   cursor: default;
 }
-
+/*my name text formatting*/
 .center-name h1 {
   font-family: var(--font-header);
   font-size: 4.5em;
@@ -70,7 +73,7 @@ body {
   margin: 0;
   cursor: default;
 }
-
+/*where portfolio will show + spacing and cursor settings*/
 .center-Welcome {
   position: absolute;
   top: 30%;
@@ -80,7 +83,7 @@ body {
   z-index: 10;
   cursor: default;
 }
-
+/*portfolio text formatting*/
 .center-Welcome h2 {
   font-family: var(--font-header);
   font-size: 2.5em;
@@ -89,7 +92,7 @@ body {
   margin: 0;
   cursor: default;
 }
-
+/*title bout me and links font size and cursor settings */
 .title-block,
 .about-block,
 .link-block{
@@ -97,19 +100,19 @@ body {
   font-size: 1.5em;
   cursor: default;
 }
-
+/*title location*/
 .title-block {
   bottom: 16em;
   right: 15.2em;
   text-align: right;
 }
-
+/*about me location */
 .about-block {
   top: 4em;
   right: 15.2em;
   text-align: left;
 }
-
+/*link location*/
 .link-block {
   display: flex;
   flex-direction: column;
@@ -119,7 +122,7 @@ body {
   position: absolute;
   text-align: left;
 }
-
+/*project page heading text formatting*/
 .link-block a {
   display: inline;
   text-decoration: none;
@@ -128,7 +131,7 @@ body {
   font-size: 1.5em;
   margin: 0.5em 0;
 }
-
+/*title and about me text formatting*/
 .title-block p,
 .about-block p
 {
@@ -136,16 +139,26 @@ body {
   margin: 0 0 0.5em 0;
   cursor: default;
 }
+
+/*title and about me text formatting*/
+.title-block p
+{
+  color: #000;
+  font-size: 1.5em; 
+  margin: 0 0 0.5em 0;
+  cursor: default;
+}
+/*non link text formatting*/
 .link-block p
 {
   display:inline-block;
   text-decoration: none;
-  color: inherit;
+  color: #000;
   font-size: 1.5em;
   margin: 0.5em 0;
   text-align: left;
 }
-
+/*individual link fromatting*/
 .line-text,
 .linkPP,
 .linkI a,
@@ -160,7 +173,7 @@ body {
   margin: 0.2em 0;
   text-align: left;
 }
-
+/*individual link spacing and cursor setting*/
 .linkPP,
 .linkI,
 .linkG,
@@ -172,6 +185,8 @@ body {
   margin: 0.2em 0;
   display: inline-block;
 }
+
+/*Center media if screen is below certain size for mobile optimization*/
 @media (max-width: 1570px) {
   .fullscreen {
     display: flex;
