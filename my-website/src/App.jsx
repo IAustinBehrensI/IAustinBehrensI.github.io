@@ -79,6 +79,9 @@ git push origin main
 
 # 3. Deploy the latest build to GitHub Pages
 npm run deploy
+if permissions error run this first
+chmod +x node_modules/.bin/gh-pages
+
 
 link to website https://IAustinBehrensI.github.io/
 
