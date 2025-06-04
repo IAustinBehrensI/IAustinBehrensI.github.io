@@ -81,7 +81,7 @@ function ProjectDetail3() {
       <div className="projectDetail-block">
         <p>Through this project, I gained hands-on experience with regression analysis, SQL Server database integration, and multi-form Visual Basic application
            development. I learned how to design and interact with relational databases, implement stored procedures, and perform data-driven predictions 
-           using statistical models. These skills directly support my goal of becoming a data engineer by strengthening my ability to manage, transform, and analyze data, 
+           using statistical models. This project had aided me in strengthening my ability to manage, transform, and analyze data, 
            while also building applications that leverage data for real-world insights.</p>
         <p><Link to="/project" className="link-style">[Back to Projects]</Link></p>
         <p><Link to="/" className="link-style">[Back to Home]</Link></p>

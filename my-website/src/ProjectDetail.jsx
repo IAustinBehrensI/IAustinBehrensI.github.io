@@ -18,14 +18,14 @@ function ProjectDetail() {
         </div>
         <div className="projectDetail-img-block">
           <img src="IndexCss.png" alt= "Screenshot 2 of Project" />
-          <p className="PDdesc">This CSS file styles the home page of the website. I used Google Fonts—Geo and Orbitron—for a modern and distinctive typographic look. ive included a fullscreen grid-patterned banner, 
+          <p className="PDdesc">This CSS file styles the home page of the website. I used Google Fonts Geo and Orbitron for a modern and distinctive typographic look. ive included a fullscreen grid-patterned banner, 
             structured sections for my name, title, about link, and external links. This has been optimized forlarge screens and can reflow into a mobile-friendly with vertical layout for smaller screens using media queries. Consistent design is maintained through font sizing, spacing, and color consistency,
              while interactive elements like links are styled with hover and pointer behaviors.</p>
         </div>
         <div className="projectDetail-img-block">
           <img src="Indexhtml.png" alt= "Screenshot 2 of Project" />
           <p className="PDdesc">The index.html file serves as the root structure for a React-based portfolio application. It includes responsive meta tags for mobile optimization, sets the page title, and links a custom favicon.
-             The div id="root" element provides the mounting point for the React DOM rendered through main.jsx. This clean and minimal setup demonstrates an understanding of efficient, modern web application architecture and deployment readiness.</p>
+             The div id="root" element provides the mounting point for the React DOM rendered through main.jsx.</p>
         </div>
         <div className="corner-tag"><p>AB.Prjct.1</p></div>
         <p><Link to="/" className="corner-home">⌂</Link></p>

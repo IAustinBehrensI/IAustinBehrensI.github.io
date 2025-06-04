@@ -22,10 +22,10 @@ function Home() {
 
 
         <div className="title-block">
-          <p>Software & data developer</p>
-          <p>Versatile</p>
-          <p>Project-driven</p>
-          <p>Solutions-oriented</p>
+          <p>Full-stack developer</p>
+          <p>Data Engineering</p>
+          <p>Networking/Cybersecurity</p>
+          <p>Project driven  Problem solver</p>
         </div>
 
 
