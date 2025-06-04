@@ -1,5 +1,5 @@
-import { Routes, Route, Link } from 'react-router-dom';
-import './App.css'; 
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import './index.css'; 
 import About from './About';
 import Project from './Project';
 import ProjectDetail from './projectdetail';
@@ -30,7 +30,7 @@ function Home() {
 
 
         <div className="about-block">
-          <p><Link to = "/about" className="link-style">[ ] About me</Link></p>
+          <p><Link to = "/about" className="link-style">[ ]About me</Link></p>
         </div>
 
 
@@ -39,9 +39,9 @@ function Home() {
             <div><Link to = "/project" className= "linkPP">[ ]Projects Page</Link></div>
 
               <p>Links</p>
-              <div className="linkI"><a href = "https://www.linkedin.com/in/austin-behrens-67697b205/" target = "_blank" rel = "noopener noreferrer">[ ] LinkedIn </a></div>
-              <div className="linkG"><a href = "https://github.com/IAustinBehrensI" target = "_blank" rel = "noopener noreferrer" >[ ] GitHub</a></div>
-              <div className="linkR"><a href = "/Austin-Behrens-Resume.pdf" download = "Austin-Behrens-Resume.pdf" >[ ] Download Resume</a></div>
+              <div className="linkI"><a href = "https://www.linkedin.com/in/austin-behrens-67697b205/" target = "_blank" rel = "noopener noreferrer">[ ]LinkedIn </a></div>
+              <div className="linkG"><a href = "https://github.com/IAustinBehrensI" target = "_blank" rel = "noopener noreferrer" >[ ]GitHub</a></div>
+              <div className="linkR"><a href = "/Austin-Behrens-Resume.pdf" download = "Austin-Behrens-Resume.pdf" >[ ]Download Resume</a></div>
 
               <p>Contact Me</p>
               <div className = "linkE"><a href = "mailto:Behrens.Austin16@gmail.com" target = "_blank" rel = "noopener noreferrer">[ ]Behrens.austin16@gmail.com</a></div> 
@@ -52,18 +52,22 @@ function Home() {
   );
 }
   function App() {
-  return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/project" element={<Project />} />
-      <Route path="/" element={<Project />} />
-      <Route path="/projectdetail" element={<ProjectDetail />} />
-      <Route path="/projectdetail2" element={<ProjectDetail2 />} />
-      <Route path="/projectdetail3" element={<ProjectDetail3 />} />
-    </Routes>
-  );
-}export default App;/*
+      return (
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/project" element={<Project />} />
+            <Route path="/projectdetail" element={<ProjectDetail />} />
+            <Route path="/projectdetail2" element={<ProjectDetail2 />} />
+            <Route path="/projectdetail3" element={<ProjectDetail3 />} />
+          </Routes>
+        </Router>
+      );
+    }
+    export default App;
+
+/*    
 ctrl c in terminal to end
 
 1. Run your dev server to work locally 
@@ -78,6 +82,7 @@ git commit -m ""
 git push origin main
 
 # 3. Deploy the latest build to GitHub Pages
+npm run build
 npm run deploy
 if permissions error run this first
 chmod +x node_modules/.bin/gh-pages
