@@ -28,7 +28,7 @@ function ProjectDetail2() {
       </div>
       <div className="projectDetail-img-block">
         <img src="Death_terminal_ss.png" alt= "Screenshot 2 of Project" />
-        <p className="PDdesc">This is an example of the terminal when a player death is detected (as ssen below) it will constantly scan your screen and when the code detects a match to the death screen template it will then run the OCR which
+        <p className="PDdesc">This is an example of the terminal when a player death is detected it will constantly scan your screen and when the script detects a match to the death screen template it will then run the OCR which
           then produces texts from the screenshots taken of the location and weapons used. This is the least intrusive way to do this as to avoid the games anticheating from banning the player it minimizes the amount we would need to make automated inputs
           or view the games logs/code. The text will then get read aloud with a human like voice that can be customized via eleven labs. a more robotic and simple voice can be used in place of this if need be.
         </p>

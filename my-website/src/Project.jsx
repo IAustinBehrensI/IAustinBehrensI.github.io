@@ -39,7 +39,7 @@ function Project() {
           <p className="Pname">Back-end development:</p>
         </div>
         <div className="project-description-block">
-          <p className="Pdesc">Built a real-time AI assistant for users who are speach iumpaired or do not have acces to a microphone that monitors visual events in a live environment using Python, OpenCV, and Tesseract OCR to detect screen patterns and extract textual information. When a trigger event
+          <p className="Pdesc">Built a real-time AI assistant for users who are speech impaired or do not have acces to a microphone that monitors visual events in a live environment using Python, OpenCV, and Tesseract OCR to detect screen patterns and extract textual information. When a trigger event
             is detected, the system captures specific screen regions, processes the text using GPT-3.5 to generate natural language callouts, and vocalizes the output using ElevenLabs text-to-speech 
             API routed through a virtual audio device. Designed with asynchronous execution for real-time responsiveness, this project demonstrates expertise in computer vision, natural language processing, and audio synthesis integration.
             Tech stack: Python, OpenCV, PyAutoGUI, pytesseract, asyncio, OpenAI API, ElevenLabs API, pygame, virtual audio routing.</p>

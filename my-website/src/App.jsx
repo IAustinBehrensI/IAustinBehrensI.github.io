@@ -74,7 +74,7 @@ npm run dev
 
 # 2. Commit & push your code to GitHub
 git add .
-git commit -m "Describe your changes"
+git commit -m ""
 git push origin main
 
 # 3. Deploy the latest build to GitHub Pages
